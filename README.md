@@ -1,6 +1,11 @@
 
 # Hyperledger Fabric [![join the chat][rocketchat-image]][rocketchat-url]
 
+## (ARM64 Build Notes)
+1. Build base image, `hyperledger/fabric-baseimage:arm64-0.4.14`, see instructions in my [arm64 fork](https://github.com/four43/fabric-baseimage)
+1. Build docker images using that as a base, `GOARCH=arm64 make docker`
+
+
 [rocketchat-url]: https://chat.hyperledger.org/channel/fabric
 [rocketchat-image]: https://open.rocket.chat/images/join-chat.svg
 
